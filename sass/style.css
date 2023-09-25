@@ -1,3 +1,45 @@
+html {
+  font-size: 10px;
+}
 
+body {
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-size: 1.6rem;
+  background-color: #e5f7f1;
+}
+
+h1 {
+  font-family: "Poppins", "Verdana", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+}
+
+h4 {
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  font-size: 22px;
+}
+
+h5 {
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=style.css.map */
