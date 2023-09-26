@@ -1,0 +1,30 @@
+.button {
+    border: none;
+    border-radius: 5px;
+    background-color: $color-primary;
+    color: $color-light;
+    line-height: 22px;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-editional;
+    }
+}
+
+.button_bordered,
+.button_colored {
+    width: 113px;
+    height: 46px;
+    padding: 11px 25px 13px;
+    font-weight: 600;
+}
+
+.button_bordered {
+    background-color: $color-light;
+    border: 2px solid $color-border;
+    color: #173A56;
+    &:hover {
+        background-color: $color-border;
+    }
+}
