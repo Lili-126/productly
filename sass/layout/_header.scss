@@ -26,6 +26,9 @@
     line-height: 28px;
     font-size: 1.2rem;
     color: $color-heading;
+    &:hover {
+        color: $color-editional;
+    }
 }
 
 .header__buttons {

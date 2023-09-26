@@ -114,6 +114,9 @@ a {
   font-size: 1.2rem;
   color: #2F281E;
 }
+.navigation__link:hover {
+  color: #FF7549;
+}
 
 .header__buttons {
   display: flex;
