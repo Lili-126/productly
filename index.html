@@ -10,24 +10,24 @@
     <link rel="stylesheet" href="../sass/style.css">
 </head>
 <body>
-    <div class="container">
-        <header id="header">
-            <a href="#header" class="logo">
+    <header id="header">
+        <div class="wrapper wrapper__header">
+            <a class="logo" href="#header">
                 <img src="../assets/images/Logo.svg" alt="Logo">
             </a>
             <nav class="header__navigation">
                 <ul class="navigation">
                     <li class="navigation__item">
-                        <a href="" class="navigation__link">Home</a>
+                        <a href="#" class="navigation__link">Home</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="" class="navigation__link">Services</a>
+                        <a href="#" class="navigation__link">Services</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="" class="navigation__link">About</a>
+                        <a href="#" class="navigation__link">About</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="" class="navigation__link">Product</a>
+                        <a href="#" class="navigation__link">Product</a>
                     </li>
                 </ul>
             </nav>
@@ -35,9 +35,11 @@
                 <button class="button button_bordered">Sign In</button>
                 <button class="button button_colored">Sign Up</button>
             </div>
-        </header>
-        <main class="main">
-            <section class="promo">
+        </div>
+    </header>
+    <main class="main">
+        <section class="promo">
+            <div class="wrapper">
                 <div class="promo__content">
                     <h1 class="promo__title">The Design Thinking superpowers</h1>
                     <p class="promo__text">Tools, tutorials, design and innovation experts, all in one place!
@@ -56,8 +58,10 @@
                     <img class="promo-images__background" src="../assets/images/promo/Oval.svg" alt="Oval">
                     <img class="promo-images__image" src="../assets/images/promo/people.png" alt="People">
                 </div>
-            </section>
-            <section class="tools">
+            </div>
+        </section>
+        <section class="tools">
+            <div class="wrapper">
                 <h2 class="title title__tools">We design tools to unveil your superpowers</h2>
                 <div class="layout-4-column">
                     <div class="tool">
@@ -69,7 +73,7 @@
                     </div>
                     <div class="tool">
                         <div class="tool__ico">
-                            <span class="icon__square"><img src="../productly/assets/images/tools/icon_orange.svg" alt="Square"></span>
+                            <span class="icon__square"><img src="../assets/images/tools/icon_orange.svg" alt="Square"></span>
                         </div>
                         <h4 class="heading heading__tool">Design surveys</h4>
                         <p class="text text__tool">Sports betting, lottery and bingo playing for the fun</p>
@@ -92,8 +96,10 @@
                 <div class="tools__button">
                     <button class="button button__promo">Sign Up now</button>
                 </div>
-            </section>
-            <section class="strategies">
+            </div>
+        </section>
+        <section class="strategies">
+            <div class="wrapper">
                 <h2 class="title title__strategies">Marketing Strategies</h2>
                 <p class="strategis__description">Join 40,000+ other marketers and get proven strategies on email marketing</p>
                 <div class="strategies__tags">
@@ -168,8 +174,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="about-us">
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="wrapper">
                 <h2 class="title">About Us</h2>
                 <p class="about-us__text">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog.
                     It also shouldn’t be their last, because first impressions count online just as much as they do in the real world.
@@ -202,8 +210,10 @@
                         <img class="employee_photo" src="../assets/images/about_us/Avator_3.png" alt="Avatars">
                     </div>
                 </div>
-            </section>
-            <section class="contacts-us">
+            </div>
+        </section>
+        <section class="contacts-us">
+            <div class="wrapper">
                 <h2 class="title">Contact Us</h2>
                 <div class="layout-2-column">
                     <div class="contacts-us__content">
@@ -233,9 +243,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
             <div class="layout-2-column">
                 <a href="#header" class="logo">
                     <img src="../assets/images/Logo.svg" alt="Logo">
@@ -251,7 +263,6 @@
                         </li>
                         <li>
                             <a class="footer__link" href="#">Contact</a>
-
                         </li>
                         <li>
                             <a class="footer__link" href="#">FAQ</a>
@@ -286,7 +297,6 @@
                         </li>
                         <li>
                             <a class="footer__link" href="#">Contact</a>
-
                         </li>
                         <li>
                             <a class="footer__link" href="#">FAQ</a>
@@ -294,7 +304,7 @@
                     </ul>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
