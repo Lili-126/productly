@@ -117,6 +117,8 @@ a {
 
 .header__buttons {
   display: flex;
+  width: 240px;
+  justify-content: space-between;
 }
 
 .contacts-us {
