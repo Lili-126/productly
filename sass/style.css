@@ -115,6 +115,10 @@ a {
   color: #2F281E;
 }
 
+.header__buttons {
+  display: flex;
+}
+
 .contacts-us {
   background-color: #FFEEE1;
 }
