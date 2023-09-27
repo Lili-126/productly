@@ -26,4 +26,13 @@
     line-height: 28px;
     font-size: 1.2rem;
     color: $color-heading;
+    transition: all 0.4s;
+    &:hover {
+        color: $color-editional;
+    }
+}
+
+.header__buttons {
+    display: flex;
+    column-gap: 14.4px;
 }
