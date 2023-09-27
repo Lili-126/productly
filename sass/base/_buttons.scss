@@ -7,6 +7,7 @@
     line-height: 22px;
     text-align: center;
     font-size: 1.2rem;
+    letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.6s;
     &:hover {
@@ -29,4 +30,9 @@
     &:hover {
         background-color: $color-border;
     }
+}
+
+.button__promo {
+    padding: 15px 41px 16px;
+    font-weight: 700;
 }
