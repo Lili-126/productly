@@ -1,24 +1,24 @@
 // стили для основных тегов
 html {
-    font-size: 10px;
+     font-size: 10px; //нужно для расчёта единицы rem дочерних элементов
   }
 
   body {
+    height: 100vh;
     font-family: "Open Sans", "Verdana", sans-serif;
     font-size: 1.6rem;
   }
 
   h1 {
-    margin-top: 113px;
+    margin-top: 8cqi;
     font-family: "Poppins", "Verdana", sans-serif;
-    font-size: 44px;
+    font-size: 4.4rem;
     font-weight: 700;
-    line-height: 54px; //должен быть не меньше font-size, иначе будет ошибка
+    line-height: 5.4rem; //должен быть не меньше font-size, иначе будет ошибка
     text-align: left;
-    letter-spacing: 1.8px;
   }
 
-  h2 {
+   h2 {
     font-size: 34px;
     font-weight: 700;
     line-height: 46px;
