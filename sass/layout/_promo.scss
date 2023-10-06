@@ -1,65 +1,61 @@
 .wrapper__promo {
     display: flex;
+    & .promo__content {
+        width: 46%;
+        padding-top: 9.5%;
+    }
+    & .promo-images {
+        width: 53.7%;
+        position: relative;
+        padding-top: 2.5%;
+    }
 }
 
 .promo__content {
-    width: 550px;
-    height: 331px;
-}
-
-.promo__text {
-    width: 487px;
-    margin-top: 30px;
-    color: $color-text;
-    font-family: Poppins;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-}
-
-.promo__buttons {
-    display: flex;
-    align-items: center;
-    column-gap: 44px;
-    margin-top: 45px;
-}
-
-.link-button {
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: left;
-    font-size: 16px;
-    color: $color-primary;
-    cursor: pointer;
-    transition: all 0.6s;
-&:hover{
-    color:  $color-editional;
+    & .promo__text {
+        width: 88.6%;
+        margin-top: 5.5%;
+        color: $color-text;
+        font-family: "Poppins", "Verdana", sans-serif;
+        font-weight: 400;
+        line-height: 2.8rem;
+        text-align: left;
+        font-size: 1.8rem;
+    }
+    & .promo__buttons {
+        display: flex;
+        align-items: center;
+        gap: 4.4rem;
+        margin-top: 8.2%;
+    }
+    & .link-button {
+        font-family: Poppins;
+        font-weight: 600;
+        line-height: 2.4rem;
+        text-align: left;
+        font-size: 1.6rem;
+        color: $color-primary;
+        cursor: pointer;
+        transition: all 0.6s;
+            &:hover{
+            color:  $color-editional;
+            }
     }
 }
 
 .promo-images {
-    width: 642px;
-    height: 495px;
-    position: relative;
-    margin-top: 59px;
     & .promo-images__background {
-        margin-left: 66px;
+        margin-left: 9.2%;
+        margin-top: 4.7%;
+        margin-bottom: 4%;
     }
     & .promo-images__image {
         width: 100%;
         position: absolute;
         z-index: 1;
         left: 0;
-        bottom: 50px;
-        transform: translateY(4.5%);
-
      }
 }
-
-
 
 
 
