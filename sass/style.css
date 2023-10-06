@@ -2,6 +2,11 @@ html {
   font-size: 10px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
   font-family: "Open Sans", "Verdana", sans-serif;
@@ -9,7 +14,6 @@ body {
 }
 
 h1 {
-  margin-top: 20.5%;
   font-family: "Poppins", "Verdana", sans-serif;
   font-size: 4.4rem;
   font-weight: 700;
@@ -86,7 +90,7 @@ a {
 }
 
 .button__promo {
-  padding: 15px 41px 16px;
+  padding: 1.5rem 4.1rem 1.6rem;
   font-weight: 700;
 }
 
@@ -133,88 +137,57 @@ a {
   display: flex;
 }
 .wrapper__promo .promo__content {
-  width: 550px;
-  height: 331px;
+  width: 46%;
+  padding-top: 9.5%;
 }
-.wrapper__promo .promo__content .promo__text {
-  width: 487px;
-  margin-top: 30px;
+.wrapper__promo .promo-images {
+  width: 53.7%;
+  position: relative;
+  padding-top: 2.5%;
+}
+
+.promo__content .promo__text {
+  width: 88.6%;
+  margin-top: 5.5%;
   color: #544837;
   font-family: "Poppins", "Verdana", sans-serif;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 2.8rem;
   text-align: left;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
-.wrapper__promo .promo__content .promo__buttons {
+.promo__content .promo__buttons {
   display: flex;
   align-items: center;
-  column-gap: 44px;
-  margin-top: 45px;
+  gap: 4.4rem;
+  margin-top: 8.2%;
 }
-.wrapper__promo .promo__content .link-button {
+.promo__content .link-button {
   font-family: Poppins;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 2.4rem;
   text-align: left;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #FF9900;
   cursor: pointer;
   transition: all 0.6s;
 }
-.wrapper__promo .promo__content .link-button:hover {
+.promo__content .link-button:hover {
   color: #FF7549;
 }
-.wrapper__promo .promo-images {
-  width: 642px;
-  height: 495px;
-  position: relative;
-  margin-top: 59px;
+
+.promo-images .promo-images__background {
+  margin-left: 9.2%;
+  margin-top: 4.7%;
+  margin-bottom: 4%;
 }
-.wrapper__promo .promo-images .promo-images__background {
-  margin-left: 66px;
-}
-.wrapper__promo .promo-images .promo-images__image {
+.promo-images .promo-images__image {
   width: 100%;
   position: absolute;
   z-index: 1;
   left: 0;
-  bottom: 50px;
-  transform: translateY(4.5%);
 }
 
-.promo__text {
-  width: 487px;
-  margin-top: 30px;
-  color: #544837;
-  font-family: "Poppins", "Verdana", sans-serif;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: left;
-  font-size: 18px;
-}
-
-/* .promo__buttons {
-    display: flex;
-    align-items: center;
-    column-gap: 44px;
-    margin-top: 45px;
-}
-
-.link-button {
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: left;
-    font-size: 16px;
-    color: $color-primary;
-    cursor: pointer;
-    transition: all 0.6s;
-&:hover{
-    color:  $color-editional;
-    }
-}
- */
 .contacts-us {
   background-color: #FFEEE1;
 }
