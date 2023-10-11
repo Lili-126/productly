@@ -1,3 +1,7 @@
+.promo__content .link-button, .navigation__link, .button, .logo-path {
+  transition: all 0.5s ease-in-out;
+}
+
 html {
   font-size: 10px;
 }
@@ -56,6 +60,13 @@ a {
   text-decoration: none;
 }
 
+.logo-svg {
+  cursor: pointer;
+}
+.logo-svg:hover .logo-path {
+  fill: #FF7549;
+}
+
 .button {
   border: none;
   border-radius: 0.4rem;
@@ -66,7 +77,6 @@ a {
   text-align: center;
   font-size: 1.6rem;
   cursor: pointer;
-  transition: all 0.6s;
 }
 .button:hover {
   background-color: #FF7549;
@@ -122,7 +132,6 @@ a {
   line-height: 2.8rem;
   font-size: 1.5rem;
   color: #2F281E;
-  transition: all 0.4s;
 }
 .navigation__link:hover {
   color: #FF7549;
@@ -170,7 +179,6 @@ a {
   font-size: 1.6rem;
   color: #FF9900;
   cursor: pointer;
-  transition: all 0.6s;
 }
 .promo__content .link-button:hover {
   color: #FF7549;
