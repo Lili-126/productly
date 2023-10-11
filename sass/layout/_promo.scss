@@ -1,13 +1,13 @@
 .wrapper__promo {
     display: flex;
     & .promo__content {
-        width: 46%;
-        padding-top: 9.5%;
+        width: 43.6%;
+        padding-top: 9%;
     }
     & .promo-images {
-        width: 53.7%;
+        width: 50.9%;
         position: relative;
-        padding-top: 2.5%;
+        padding-top: 2.4%;
     }
 }
 
@@ -36,7 +36,8 @@
         font-size: 1.6rem;
         color: $color-primary;
         cursor: pointer;
-        transition: all 0.6s;
+        @extend %transition;
+
             &:hover{
             color:  $color-editional;
             }
