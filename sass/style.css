@@ -110,7 +110,7 @@ a {
 }
 
 .header {
-  padding: 1.07% 0 1.21%;
+  padding: 1% 0 1.13%;
   background-color: #ffffff;
   box-shadow: 0 0.25rem 1.25rem 0 rgba(0, 0, 0, 0.0784313725);
 }
@@ -146,13 +146,13 @@ a {
   display: flex;
 }
 .wrapper__promo .promo__content {
-  width: 46%;
-  padding-top: 9.5%;
+  width: 43.6%;
+  padding-top: 9%;
 }
 .wrapper__promo .promo-images {
-  width: 53.7%;
+  width: 50.9%;
   position: relative;
-  padding-top: 2.5%;
+  padding-top: 2.4%;
 }
 
 .promo__content .promo__text {
