@@ -1,13 +1,21 @@
 @import "../node_modules/normalize-scss/sass/normalize";
+
+// abstracts
 @import "abstracts/constants";
-@import "abstracts/placeholders";
 @import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+//base
 @import "base/base";
 @import "base/logo";
 @import "base/buttons";
+
+//layout
 @import "layout/wrapper";
 @import "layout/header";
 @import "layout/promo";
+
+//components
 @import "components/contact-us";
 
 
