@@ -1,20 +1,19 @@
 .wrapper__promo {
     display: flex;
     & .promo__content {
-        width: 43.6%;
-        padding-top: 9%;
+        width: 47.8%;
+        padding-top: 9.5%;
     }
     & .promo-images {
-        width: 50.9%;
+        width: 52.2%;
         position: relative;
-        margin-left: 5%;
-        padding-top: 2.4%;
+        padding-top: 2.51%;
     }
 }
 
 .promo__content {
     & .promo__text {
-        width: 88.6%;
+        width: 85%;
         margin-top: 5.5%;
         color: $color-text;
         font-family: "Poppins", "Verdana", sans-serif;

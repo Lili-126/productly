@@ -4,9 +4,9 @@
     background-color: $color-primary;
     color: $color-light;
     font-family: Open Sans;
+    font-size: 1.6rem;
     line-height: 2.2rem;
     text-align: center;
-    font-size: 1.6rem;
     cursor: pointer;
     @extend %transition;
     &:hover {

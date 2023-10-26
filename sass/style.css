@@ -75,9 +75,9 @@ a {
   background-color: #FF9900;
   color: #ffffff;
   font-family: Open Sans;
+  font-size: 1.6rem;
   line-height: 2.2rem;
   text-align: center;
-  font-size: 1.6rem;
   cursor: pointer;
 }
 .button:hover {
@@ -112,7 +112,7 @@ a {
 }
 
 .header {
-  padding: 1% 0 1.13%;
+  padding: 1.05% 0 1.19%;
   background-color: #ffffff;
   box-shadow: 0 0.25rem 1.25rem 0 rgba(0, 0, 0, 0.0784313725);
 }
@@ -149,18 +149,17 @@ a {
   display: flex;
 }
 .wrapper__promo .promo__content {
-  width: 43.6%;
-  padding-top: 9%;
+  width: 47.8%;
+  padding-top: 9.5%;
 }
 .wrapper__promo .promo-images {
-  width: 50.9%;
+  width: 52.2%;
   position: relative;
-  margin-left: 5%;
-  padding-top: 2.4%;
+  padding-top: 2.51%;
 }
 
 .promo__content .promo__text {
-  width: 88.6%;
+  width: 85%;
   margin-top: 5.5%;
   color: #544837;
   font-family: "Poppins", "Verdana", sans-serif;
