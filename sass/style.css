@@ -1,4 +1,4 @@
-.promo__content .link-button, .navigation__link, .button, .logo-path {
+.navigation__link, .promo__content .link-button, .button, .logo-path {
   transition: all 0.5s ease-in-out;
 }
 
@@ -123,23 +123,6 @@ a {
   justify-content: space-between;
 }
 
-.navigation {
-  display: flex;
-  gap: 1.7rem;
-  cursor: pointer;
-}
-
-.navigation__link {
-  font-style: normal;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2.8rem;
-  color: #2F281E;
-}
-.navigation__link:hover {
-  color: #FF7549;
-}
-
 .header__buttons {
   display: flex;
   gap: 1.44rem;
@@ -181,6 +164,7 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 2.4rem;
+  text-decoration: underline;
   text-align: left;
   color: #FF9900;
   cursor: pointer;
@@ -199,6 +183,23 @@ a {
   position: absolute;
   z-index: 1;
   left: 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 1.7rem;
+  cursor: pointer;
+}
+
+.navigation__link {
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: #2F281E;
+}
+.navigation__link:hover {
+  color: #FF7549;
 }
 
 .contacts-us {

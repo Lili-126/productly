@@ -29,6 +29,7 @@
     & .link-button {
         font-family: Poppins;
         @include font(1.6rem, 600, 2.4rem);
+        text-decoration: underline;  // подчёркивает текст
         text-align: left;
         color: $color-primary;
         cursor: pointer;
