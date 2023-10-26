@@ -3,10 +3,10 @@
     border-radius: 0.4rem;
     background-color: $color-primary;
     color: $color-light;
-    font-family: Open Sans;
+    @extend %font-basic;
+    font-size: 1.6rem;
     line-height: 2.2rem;
     text-align: center;
-    font-size: 1.6rem;
     cursor: pointer;
     @extend %transition;
     &:hover {

@@ -1,0 +1,13 @@
+.navigation {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.navigation__link {
+    @include font(1.5rem, 400, 2.8rem);
+    color: $color-heading;
+    @extend %transition;
+    &:hover {
+        color: $color-editional;
+    }
+}

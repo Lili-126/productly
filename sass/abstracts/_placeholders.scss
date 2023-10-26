@@ -1,3 +1,10 @@
 %transition {
-    transition: all .4s ease-in-out;
+    transition: all .3s cubic-bezier(0.49, 0.34, 0.51, 0.4);
 }
+
+%font-basic {
+    font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+%font-additional {
+    font-family: "Poppins", "Verdana", sans-serif;

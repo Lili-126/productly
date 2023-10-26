@@ -1,5 +1,5 @@
 .header {
-    padding: 1% 0 1.13%;
+    padding: 1.05% 0 1.19%;
     background-color: $color-light;
     box-shadow: 0 0.25rem 1.25rem 0 #00000014;
 }
@@ -8,21 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.navigation {
-    display: flex;
-    gap: 1.7rem;
-    cursor: pointer;
-}
-
-.navigation__link {
-    @include font(1.5rem, 400, 2.8rem);
-    color: $color-heading;
-    @extend %transition;
-    &:hover {
-        color: $color-editional;
-    }
 }
 
 .header__buttons {
