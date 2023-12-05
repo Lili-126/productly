@@ -4,12 +4,12 @@
 
 .promo__content {
     width: 47.8%;
-    padding-top: 9.5%;
+    padding-top: 9%;
 }
 
 .promo__text {
     width: 85%;
-    margin-top: 5.5%;
+    padding-top: 5%;
     color: $color-text;
     @extend %font-additional;
     @include font(1.8rem, 400, 2.8rem);
@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     gap: 4.4rem;
-    margin-top: 8.2%;
+    padding-top: 7.5%;
     & .link-button {
         display: inline-flex;
         align-items: center;
@@ -39,7 +39,7 @@
 .promo-images {
     width: 52.2%;
     position: relative;
-    padding-top: 2.51%;
+    padding-top: 2.4%;
     & .promo-images__background {
         margin-left: 9.2%;
         margin-top: 4.7%;
