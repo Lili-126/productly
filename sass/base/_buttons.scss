@@ -35,3 +35,17 @@
     padding: 1.5rem 3.7rem 1.6rem;
     font-weight: 700;
 }
+
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    @extend %font-additional;
+    @include font(1.6rem, 600, 2.4rem);
+    text-decoration: underline;  // подчёркивает текст
+    text-align: left;
+    color: $color-primary;
+    @extend %transition;
+        &:hover{
+        color:  $color-editional;
+        }
+}

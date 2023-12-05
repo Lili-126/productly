@@ -1,4 +1,4 @@
-.navigation__link, .promo__buttons .link-button, .button, .logo-path {
+.navigation__link, .link-button, .button, .logo-path {
   transition: all 0.3s;
 }
 
@@ -6,7 +6,7 @@
   font-family: "Open Sans", "Verdana", sans-serif;
 }
 
-.promo__buttons .link-button, .promo__text, h1 {
+.promo__text, .link-button, h1 {
   font-family: "Poppins", "Verdana", sans-serif;
 }
 
@@ -115,6 +115,21 @@ a {
   font-weight: 700;
 }
 
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  text-decoration: underline;
+  text-align: left;
+  color: #FF9900;
+}
+.link-button:hover {
+  color: #FF7549;
+}
+
 .ico {
   display: inline-block;
 }
@@ -148,6 +163,22 @@ a {
   gap: 1.44rem;
 }
 
+.navigation {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.navigation__link {
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: #2F281E;
+}
+.navigation__link:hover {
+  color: #FF7549;
+}
+
 .wrapper__promo {
   display: flex;
 }
@@ -174,20 +205,6 @@ a {
   gap: 4.4rem;
   padding-top: 7.5%;
 }
-.promo__buttons .link-button {
-  display: inline-flex;
-  align-items: center;
-  font-style: normal;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 2.4rem;
-  text-decoration: underline;
-  text-align: left;
-  color: #FF9900;
-}
-.promo__buttons .link-button:hover {
-  color: #FF7549;
-}
 
 .promo-images {
   width: 52.2%;
@@ -197,29 +214,13 @@ a {
 .promo-images .promo-images__background {
   margin-left: 9.2%;
   margin-top: 4.7%;
-  margin-bottom: 4%;
+  margin-bottom: 5.5%;
 }
 .promo-images .promo-images__image {
   width: 100%;
   position: absolute;
   z-index: 1;
   left: 0;
-}
-
-.navigation {
-  display: flex;
-  gap: 1.7rem;
-}
-
-.navigation__link {
-  font-style: normal;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2.8rem;
-  color: #2F281E;
-}
-.navigation__link:hover {
-  color: #FF7549;
 }
 
 .contacts-us {
