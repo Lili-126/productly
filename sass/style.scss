@@ -12,10 +12,14 @@
 //layout
 @import "layout/wrapper";
 @import "layout/header";
-@import "layout/promo";
+@import "layout/columns";
+
 
 //components
 @import "components/navigation";
+@import "components/promo";
+@import "components/tools";
+@import "components/strategies";
 @import "components/contact-us";
 
 

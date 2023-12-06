@@ -1,12 +1,12 @@
-.navigation__link, .promo__buttons .link-button, .button, .logo-path {
-  transition: all 0.3s cubic-bezier(0.49, 0.34, 0.51, 0.4);
+.navigation__link, .link-button, .button, .logo-path {
+  transition: all 0.3s;
 }
 
 .button, body {
   font-family: "Open Sans", "Verdana", sans-serif;
 }
 
-.promo__buttons .link-button, .promo__text, h1 {
+.promo__text, .link-button, h1 {
   font-family: "Poppins", "Verdana", sans-serif;
 }
 
@@ -37,30 +37,30 @@ h1 {
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 3.4rem;
   font-weight: 700;
-  line-height: 46px;
+  line-height: 4.6rem;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 34px;
+  line-height: 3.4rem;
   text-align: left;
 }
 
 h4 {
   font-weight: 600;
-  line-height: 30px;
+  line-height: 3rem;
   text-align: left;
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 h5 {
   font-weight: 700;
-  line-height: 26px;
+  line-height: 2.6rem;
   text-align: left;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 li {
@@ -111,8 +111,23 @@ a {
 }
 
 .button__promo {
-  padding: 1.5rem 4.1rem 1.6rem;
+  padding: 1.5rem 3.7rem 1.6rem;
   font-weight: 700;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  text-decoration: underline;
+  text-align: left;
+  color: #FF9900;
+}
+.link-button:hover {
+  color: #FF7549;
 }
 
 .ico {
@@ -132,7 +147,7 @@ a {
 }
 
 .header {
-  padding: 1.05% 0 1.19%;
+  padding: 1% 0 1.12%;
   background-color: #ffffff;
   box-shadow: 0 0.25rem 1.25rem 0 rgba(0, 0, 0, 0.0784313725);
 }
@@ -148,62 +163,31 @@ a {
   gap: 1.44rem;
 }
 
-.wrapper__promo {
+.layout-4-column {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-4-column > * {
+  flex-basis: 20%;
 }
 
-.promo__content {
-  width: 47.8%;
-  padding-top: 9.5%;
-}
-
-.promo__text {
-  width: 85%;
-  margin-top: 5.5%;
-  color: #544837;
-  font-style: normal;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.8rem;
-  text-align: left;
-}
-
-.promo__buttons {
+.layout-3-column {
   display: flex;
-  align-items: center;
-  gap: 4.4rem;
-  margin-top: 8.2%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.promo__buttons .link-button {
-  display: inline-flex;
-  align-items: center;
-  font-style: normal;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 2.4rem;
-  text-decoration: underline;
-  text-align: left;
-  color: #FF9900;
-}
-.promo__buttons .link-button:hover {
-  color: #FF7549;
+.layout-3-column > * {
+  flex-basis: 30%;
 }
 
-.promo-images {
-  width: 52.2%;
-  position: relative;
-  padding-top: 2.51%;
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.promo-images .promo-images__background {
-  margin-left: 9.2%;
-  margin-top: 4.7%;
-  margin-bottom: 4%;
-}
-.promo-images .promo-images__image {
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  left: 0;
+.layout-2-column > * {
+  flex-basis: 45%;
 }
 
 .navigation {
@@ -222,8 +206,82 @@ a {
   color: #FF7549;
 }
 
-.contacts-us {
-  background-color: #FFEEE1;
+.wrapper__promo {
+  display: flex;
 }
 
-/*# sourceMappingURL=style.css.map */
+.promo__content {
+  width: 47.8%;
+  padding-top: 9%;
+}
+
+.promo__text {
+  width: 85%;
+  padding-top: 5%;
+  color: #544837;
+  font-style: normal;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  text-align: left;
+}
+
+.promo__buttons {
+  display: flex;
+  align-items: center;
+  gap: 4.4rem;
+  padding-top: 7.5%;
+}
+
+.promo-images {
+  width: 52.2%;
+  position: relative;
+  padding-top: 2.4%;
+}
+.promo-images .promo-images__background {
+  margin-left: 9.2%;
+  margin-top: 4.7%;
+  margin-bottom: 5.5%;
+}
+.promo-images .promo-images__image {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+.wrapper__tools {
+  padding-bottom: 9rem;
+  background: url(../assets/images/tools/Bg.svg) no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+}
+
+.tools__title {
+  width: 36.6%;
+  margin: 8.8% auto 5.5%;
+  text-align: center;
+}
+
+.tool__ico {
+  width: 5.5rem;
+  height: 5rem;
+}
+
+.tool__heading {
+  padding-top: 3rem;
+}
+
+.text__tool {
+  padding-top: 1.6rem;
+}
+
+.tools__button {
+  width: 14%;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.contacts-us {
+  background-color: #FFEEE1;
+}/*# sourceMappingURL=style.css.map */
