@@ -141,6 +141,29 @@ a {
   margin-right: 0.9rem;
 }
 
+.tag {
+  border-radius: 9rem;
+  padding: 0 1.4rem;
+  font-style: normal;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.tag_colored {
+  background-color: #FF9900;
+  color: #ffffff;
+}
+
+.tag_bordered {
+  border: 1px solid #BCD0E5;
+}
+
+.tag_color {
+  background-color: #F5F5F5;
+  padding: 0.7rem 1.4rem;
+}
+
 .wrapper {
   max-width: 83.1%;
   margin: auto;
@@ -280,6 +303,41 @@ a {
   width: 14%;
   margin: 0 auto;
   margin-top: 6rem;
+}
+
+.strategies {
+  padding-top: 3rem;
+}
+
+.strategies__description {
+  padding-top: 1.4rem;
+}
+
+.strategies__tags {
+  display: flex;
+  padding-top: 2.4rem;
+  padding-bottom: 3.1rem;
+}
+.strategies__tags > * {
+  margin-right: 0.7rem;
+}
+
+.strategy-wrapper > * {
+  margin-bottom: 3rem;
+}
+
+.block-shadow,
+.block-shadow_four {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.0509803922);
+  border-radius: 1rem;
+}
+
+.block-shadow__container {
+  padding: 2.4rem 3.4rem 2.6rem;
+}
+
+.block-shadow__tags {
+  padding-top: 2.4rem;
 }
 
 .contacts-us {
