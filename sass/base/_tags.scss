@@ -1,0 +1,19 @@
+.tag {
+    border-radius: 9rem;
+    padding: 0 1.4rem;
+    @include font($size: 1.3rem, $weight: 400, $height: 2.8rem)
+}
+
+.tag_colored {
+    background-color: $color-primary;
+    color: $color-light;
+   }
+
+.tag_bordered {
+ border: 1px solid $color-border;
+}
+
+.tag_color {
+    background-color: #F5F5F5;
+    padding: 0.7rem 1.4rem;
+}
