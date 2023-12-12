@@ -1,3 +1,56 @@
 .contacts-us {
+    padding: 6.2rem 0 8.2rem;
     background-color: $color-background;
+}
+
+.contacts-us__title {
+    padding-bottom: 1.7rem;
+}
+
+.contacts-us__text {
+    width: 85%;
+    padding-bottom: 3.3rem;
+}
+
+.contacts-us__links {
+    @include font(1.6rem, 400, 2.7rem);
+    color: $color-text;
+    &:hover {
+        color: $color-editional;
+    }
+
+}
+
+.ico__block {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-bottom: 1.9rem;
+}
+
+.contacts-us__form {
+    input, .form-text {
+        border: none;
+        background-color: $color-light;
+        padding: 1rem 2.1rem;
+        border-radius: 0.5rem;
+        &:focus {
+            border: 1px solid $color-primary;
+            outline: none;  // удалила синюю рамку при клике на форму
+        }
+    }
+}
+
+.form-text {
+    width: 100%;
+    margin: 1.8rem 0 2rem;
+    resize: none;  // убрала изменение размера textarea
+
+}
+
+.contacts-us__button {
+    >* {
+        width: 11.7rem;
+        height: 5.3rem;
+    }
 }

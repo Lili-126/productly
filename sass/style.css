@@ -26,6 +26,11 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
+  color: #544837;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #2F281E;
 }
 
 h1 {
@@ -141,6 +146,20 @@ a {
   margin-right: 0.9rem;
 }
 
+.ico_tel,
+.ico_mail {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.ico_tel {
+  background-image: url("/assets/images/contacts_us/ico_phone.svg");
+}
+
+.ico_mail {
+  background-image: url("/assets/images/contacts_us/ico_mail.svg");
+}
+
 .tag {
   border-radius: 9rem;
   padding: 0 1.4rem;
@@ -210,7 +229,7 @@ a {
   justify-content: space-between;
 }
 .layout-2-column > * {
-  flex-basis: 45%;
+  flex-basis: 49%;
 }
 
 .navigation {
@@ -341,5 +360,55 @@ a {
 }
 
 .contacts-us {
+  padding: 6.2rem 0 8.2rem;
   background-color: #FFEEE1;
+}
+
+.contacts-us__title {
+  padding-bottom: 1.7rem;
+}
+
+.contacts-us__text {
+  width: 85%;
+  padding-bottom: 3.3rem;
+}
+
+.contacts-us__links {
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: #544837;
+}
+.contacts-us__links:hover {
+  color: #FF7549;
+}
+
+.ico__block {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-bottom: 1.9rem;
+}
+
+.contacts-us__form input, .contacts-us__form .form-text {
+  border: none;
+  background-color: #ffffff;
+  padding: 1rem 2.1rem;
+  border-radius: 0.5rem;
+}
+.contacts-us__form input:focus, .contacts-us__form .form-text:focus {
+  border: 1px solid #FF9900;
+  outline: none;
+}
+
+.form-text {
+  width: 100%;
+  margin: 1.8rem 0 2rem;
+  resize: none;
+}
+
+.contacts-us__button > * {
+  width: 11.7rem;
+  height: 5.3rem;
 }/*# sourceMappingURL=style.css.map */
