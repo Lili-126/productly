@@ -8,3 +8,17 @@
     height: 19px;
     margin-right: 0.9rem;
 }
+
+.ico_tel,
+.ico_mail {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.ico_tel {
+    background-image: url('/assets/images/contacts_us/ico_phone.svg');
+}
+
+.ico_mail {
+    background-image: url('/assets/images/contacts_us/ico_mail.svg');
+}
