@@ -13,6 +13,11 @@ html {
     height: 100vh;
     @extend %font-basic;
     @include font(1.6rem, 400, 2.6rem);
+    color: $color-text;
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: $color-heading;
   }
 
   h1 {
