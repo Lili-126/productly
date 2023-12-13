@@ -184,7 +184,7 @@ a {
 }
 
 .wrapper {
-  max-width: 83.1%;
+  max-width: 78.5%;
   margin: auto;
 }
 
@@ -319,7 +319,7 @@ a {
 }
 
 .tools__button {
-  width: 14%;
+  width: 14.5%;
   margin: 0 auto;
   margin-top: 6rem;
 }
@@ -359,6 +359,21 @@ a {
   padding-top: 2.4rem;
 }
 
+.about-us {
+  padding: 9.6rem 0 10.1rem;
+}
+
+.about-us__text {
+  padding-top: 1.4rem;
+}
+
+.container-employee {
+  padding-top: 4.5rem;
+}
+
+/* .employee {
+
+} */
 .contacts-us {
   padding: 6.2rem 0 8.2rem;
   background-color: #FFEEE1;
