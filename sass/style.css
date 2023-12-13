@@ -6,7 +6,7 @@
   font-family: "Open Sans", "Verdana", sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.promo__text, .footer__link, .link-button, h1 {
   font-family: "Poppins", "Verdana", sans-serif;
 }
 
@@ -230,6 +230,31 @@ a {
 }
 .layout-2-column > * {
   flex-basis: 49%;
+}
+
+.wrapper-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5.8rem 0 5.2rem;
+}
+
+.wrapper-navigation {
+  width: 70%;
+}
+
+.footer-navigation__links {
+  margin-top: 1.5rem;
+}
+
+.footer__link {
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  color: #544837;
+}
+.footer__link:hover {
+  color: #FF7549;
 }
 
 .navigation {

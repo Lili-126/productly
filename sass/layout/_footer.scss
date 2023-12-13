@@ -1,0 +1,22 @@
+.wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5.8rem 0 5.2rem;
+}
+
+.wrapper-navigation {
+    width: 70%;
+}
+
+.footer-navigation__links {
+    margin-top: 1.5rem;
+}
+
+.footer__link {
+    @extend %font-additional;
+    @include font(1.6rem, 400, 3.5rem);
+    color: $color-text;
+    &:hover {
+        color: $color-editional;
+    }
+}
