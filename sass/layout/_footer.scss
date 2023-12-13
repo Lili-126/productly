@@ -16,6 +16,7 @@
     @extend %font-additional;
     @include font(1.6rem, 400, 3.5rem);
     color: $color-text;
+    @extend %transition;
     &:hover {
         color: $color-editional;
     }
