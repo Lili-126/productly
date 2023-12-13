@@ -6,7 +6,7 @@
   font-family: "Open Sans", "Verdana", sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.promo__text, .footer__link, .link-button, h1 {
   font-family: "Poppins", "Verdana", sans-serif;
 }
 
@@ -184,7 +184,7 @@ a {
 }
 
 .wrapper {
-  max-width: 83.1%;
+  max-width: 78.5%;
   margin: auto;
 }
 
@@ -220,7 +220,7 @@ a {
   justify-content: space-between;
 }
 .layout-3-column > * {
-  flex-basis: 30%;
+  flex-basis: 31.7%;
 }
 
 .layout-2-column {
@@ -230,6 +230,31 @@ a {
 }
 .layout-2-column > * {
   flex-basis: 49%;
+}
+
+.wrapper-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5.8rem 0 5.2rem;
+}
+
+.wrapper-navigation {
+  width: 70%;
+}
+
+.footer-navigation__links {
+  margin-top: 1.5rem;
+}
+
+.footer__link {
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  color: #544837;
+}
+.footer__link:hover {
+  color: #FF7549;
 }
 
 .navigation {
@@ -276,7 +301,7 @@ a {
 }
 
 .promo-images {
-  width: 52.2%;
+  width: 56%;
   position: relative;
   padding-top: 2.4%;
 }
@@ -319,7 +344,7 @@ a {
 }
 
 .tools__button {
-  width: 14%;
+  width: 14.5%;
   margin: 0 auto;
   margin-top: 6rem;
 }
@@ -357,6 +382,33 @@ a {
 
 .block-shadow__tags {
   padding-top: 2.4rem;
+}
+
+.about-us {
+  padding: 9.6rem 0 10.1rem;
+}
+
+.about-us__text {
+  padding-top: 1.4rem;
+}
+
+.employee {
+  display: flex;
+  justify-content: space-between;
+  height: 14.1rem;
+  margin-top: 4.5rem;
+}
+
+.employee__content {
+  padding: 3.6rem 3.5rem;
+  padding-right: 0;
+  font-size: 1.4rem;
+}
+
+.employee_photo {
+  width: 9.8rem;
+  height: 9.8rem;
+  margin: 2rem 0;
 }
 
 .contacts-us {
