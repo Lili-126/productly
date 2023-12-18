@@ -14,3 +14,9 @@
     display: flex;
     gap: 1.44rem;
 }
+
+.header__navigation {
+    @include media-tablet {
+        display: none;
+    }
+}
