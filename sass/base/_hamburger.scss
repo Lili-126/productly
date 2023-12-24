@@ -8,14 +8,21 @@
     background-color: $color-hamburger;
 }
 
+.header__logo-line {
+    display: flex;
+}
 
 .hamburger {
     display: none;
     position: relative;
     width: 3.1rem;
     height: 2.5rem;
+    margin-right: 3.7rem;
     @include media-tablet {
         display: inline-block;
+    }
+    @include media-mobile {
+        margin-right: 6.1rem;
     }
     &::before {
         @extend %hamburger-line;

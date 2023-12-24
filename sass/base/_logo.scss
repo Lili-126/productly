@@ -1,3 +1,13 @@
+.logo {
+    display: flex;
+}
+
+.logo-object {
+    @include media-mobile {
+        width: 158px;
+     }
+}
+
 .logo-path {
     @extend %transition;  // подключили placeholder
 }
