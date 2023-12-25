@@ -8,7 +8,7 @@
 
 .promo__content {
     width: 47.8%;
-    padding-top: 9%;
+    padding-top: 9.5%;
     @include media-tablet {
       width: 60%;
     }
@@ -46,7 +46,7 @@
 }
 
 .promo__image {
-    width: 642px;
+    max-width: 642px;
     padding-top: 3rem;
     @include media-tablet {
         width: 580px;

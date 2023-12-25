@@ -410,7 +410,7 @@ a {
 
 .promo__content {
   width: 47.8%;
-  padding-top: 9%;
+  padding-top: 9.5%;
 }
 @media screen and (max-width: 768px) {
   .promo__content {
@@ -463,7 +463,7 @@ a {
 }
 
 .promo__image {
-  width: 642px;
+  max-width: 642px;
   padding-top: 3rem;
 }
 @media screen and (max-width: 768px) {
@@ -481,21 +481,55 @@ a {
 }
 
 .wrapper__tools {
-  padding-bottom: 9rem;
+  padding: 7.3% 0 5.95%;
   background: url(../assets/images/tools/Bg.svg) no-repeat;
   background-size: 100%;
   background-position: center bottom;
 }
 
 .tools__title {
-  width: 36.6%;
-  margin: 8.8% auto 5.5%;
+  width: 40.5%;
+  margin: auto;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .tools__title {
+    width: 65%;
+    margin: 7.8% auto 0;
+  }
+}
+@media screen and (max-width: 431px) {
+  .tools__title {
+    width: 100%;
+    margin-top: 4.9rem;
+  }
+}
+
+.colum-tools {
+  padding: 5.8% 0 2.8%;
+}
+
+@media screen and (max-width: 768px) {
+  .tool {
+    flex-basis: 45%;
+    margin-top: 5.4rem;
+  }
+}
+@media screen and (max-width: 431px) {
+  .tool {
+    flex-basis: 100%;
+    margin-top: 4.7rem;
+  }
 }
 
 .tool__ico {
   width: 5.5rem;
   height: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .tool__ico {
+    margin: auto;
+  }
 }
 
 .tool__heading {
@@ -506,10 +540,28 @@ a {
   padding-top: 1.6rem;
 }
 
+@media screen and (max-width: 768px) {
+  .tool__heading,
+  .text__tool {
+    text-align: center;
+  }
+}
+
 .tools__button {
   width: 14.5%;
   margin: 0 auto;
-  margin-top: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .tools__button {
+    width: 25.5%;
+    margin-top: 5.4rem;
+  }
+}
+@media screen and (max-width: 431px) {
+  .tools__button {
+    width: 52%;
+    margin-top: 3.8rem;
+  }
 }
 
 .strategies {
@@ -558,14 +610,17 @@ a {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.0509803922);
   border-radius: 1rem;
 }
+.block-shadow__image {
+  max-width: 100%;
+}
 @media screen and (max-width: 768px) {
   .block-shadow__image {
     width: 32.3rem;
   }
 }
 
-.image_four {
-  height: 17.1rem;
+.image-table {
+  display: none;
 }
 
 .block-shadow__container {
@@ -573,6 +628,9 @@ a {
   flex-direction: column;
   flex-grow: 1;
   padding: 2.4rem 3.4rem 2.6rem;
+}
+.block-shadow__container:hover h3 {
+  color: #FF9900;
 }
 
 .block-shadow__title {
@@ -584,7 +642,7 @@ a {
 }
 
 .about-us {
-  padding: 9.6rem 0 10.1rem;
+  padding: 6.3% 0 6.7%;
 }
 
 .about-us__text {
@@ -592,7 +650,7 @@ a {
 }
 
 .employee {
-  display: flex;
+  position: relative;
   justify-content: space-between;
   height: 14.1rem;
   margin-top: 4.5rem;
@@ -601,12 +659,17 @@ a {
 .employee__content {
   padding: 3.6rem 3.5rem;
   padding-right: 0;
+  font-style: normal;
   font-size: 1.4rem;
-  line-height: 2.2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
 }
 
 .employee_photo {
-  margin: 2rem 0;
+  position: absolute;
+  top: 8px;
+  right: -43px;
+  max-width: 154px;
 }
 
 .contacts-us {

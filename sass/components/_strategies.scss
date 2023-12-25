@@ -32,7 +32,7 @@
         >* {
             flex-basis: 100%;
         }
-    }    
+    }
 }
 
 .block-shadow,
@@ -47,13 +47,14 @@
 }
 
 .block-shadow__image {
+    max-width: 100%;
     @include media-tablet {
        width: 32.3rem;
     }
 }
 
-.image_four {
-    height: 17.1rem;
+.image-table {
+    display: none;
 }
 
 .block-shadow__container {
@@ -61,6 +62,11 @@
     flex-direction: column;
     flex-grow: 1;
     padding: 2.4rem 3.4rem 2.6rem;
+    &:hover {
+        h3 {
+            color: $color-primary;
+        }
+    }
 }
 
 .block-shadow__title {

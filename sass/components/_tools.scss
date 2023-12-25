@@ -1,19 +1,45 @@
 .wrapper__tools {
-    padding-bottom: 9rem;
+    padding: 7.3% 0 5.95%;
     background: url(../assets/images/tools/Bg.svg) no-repeat;
     background-size: 100%;
     background-position: center bottom;
 }
 
 .tools__title {
-width: 36.6%;
-margin: 8.8% auto 5.5%;
+width: 40.5%;
+margin: auto;
 text-align: center;
+@include media-tablet {
+    width: 65%;
+    margin: 7.8% auto 0;
+}
+@include media-mobile {
+    width: 100%;
+    margin-top: 4.9rem;
+}
+}
+
+.colum-tools {
+    padding: 5.8% 0 2.8%;
+}
+
+.tool {
+    @include media-tablet {
+        flex-basis: 45%;
+        margin-top: 5.4rem;
+    }
+    @include media-mobile {
+        flex-basis: 100%;
+        margin-top: 4.7rem;
+    }
 }
 
 .tool__ico {
     width: 5.5rem;
     height: 5rem;
+    @include media-tablet {
+        margin: auto;
+    }
 }
 
 .tool__heading {
@@ -24,8 +50,22 @@ text-align: center;
     padding-top: 1.6rem;
 }
 
+.tool__heading ,
+.text__tool {
+    @include media-tablet {
+        text-align: center;
+    }
+}
+
 .tools__button {
     width: 14.5%;
     margin: 0 auto;
-    margin-top: 6rem;
+    @include media-tablet {
+       width: 25.5%;
+       margin-top: 5.4rem;
+    }
+    @include media-mobile {
+        width: 52%;
+        margin-top: 3.8rem;
+    }
 }
