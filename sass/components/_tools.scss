@@ -1,19 +1,56 @@
 .wrapper__tools {
-    padding-bottom: 9rem;
+    padding: 7.3% 0 5.95%;
     background: url(../assets/images/tools/Bg.svg) no-repeat;
     background-size: 100%;
     background-position: center bottom;
+    @include media-tablet {
+        padding-top: 78px;
+    }
+    @include media-mobile {
+        width: 100%;
+        padding-top: 49px;
+    }
 }
 
 .tools__title {
-width: 36.6%;
-margin: 8.8% auto 5.5%;
+width: 40.5%;
+margin: auto;
 text-align: center;
+@include media-tablet {
+    width: 65%;
+    margin: auto;
+}
+@include media-mobile {
+    width: 100%;
+}
+}
+
+.colum-tools {
+    padding: 5.8% 0 2.8%;
+    @include media-mobile {
+        padding: 43px 0 38px;
+        gap: 47px;
+    }
+}
+
+.tool {
+    @include media-tablet {
+        flex-basis: 45%;
+        margin-top: 54px;
+    }
+    @include media-mobile {
+        flex-basis: 100%;
+        margin-top: 0;
+        padding: 0 25px;
+    }
 }
 
 .tool__ico {
     width: 5.5rem;
     height: 5rem;
+    @include media-tablet {
+        margin: auto;
+    }
 }
 
 .tool__heading {
@@ -24,8 +61,17 @@ text-align: center;
     padding-top: 1.6rem;
 }
 
+.tool__heading ,
+.text__tool {
+    @include media-tablet {
+        text-align: center;
+    }
+}
+
 .tools__button {
-    width: 14.5%;
+    width: 171px;
     margin: 0 auto;
-    margin-top: 6rem;
+    @include media-mobile {
+        width: 173px;
+    }
 }

@@ -2,15 +2,36 @@
     padding: 1% 0 1.12%;
     background-color: $color-light;
     box-shadow: 0 0.25rem 1.25rem 0 #00000014;
+    @include media-tablet {
+        padding: 2.1% 0;
+    }
+    @include media-mobile {
+        padding: 5% 0;
+    }
 }
 
 .wrapper__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media-tablet {
+       padding-left: 2.4rem;
+    }
+    @include media-mobile {
+       padding-left: 2.1rem;
+    }
 }
 
 .header__buttons {
     display: flex;
     gap: 1.44rem;
+    @include media-mobile {
+        display: none;
+     }
+}
+
+.header__navigation {
+    @include media-tablet {
+        display: none;
+    }
 }

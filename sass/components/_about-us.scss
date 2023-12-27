@@ -1,5 +1,5 @@
 .about-us {
-    padding: 9.6rem 0 10.1rem;
+    padding: 6.3% 0 6.7%;
 }
 
 .about-us__text {
@@ -7,7 +7,7 @@
 }
 
 .employee {
-    display: flex;
+    position: relative;
     justify-content: space-between;
     height: 14.1rem;
     margin-top: 4.5rem;
@@ -16,12 +16,13 @@
 .employee__content {
     padding: 3.6rem 3.5rem;
     padding-right: 0;
-    font-size: 1.4rem;
+    @include font(1.4rem, 400, 2.6rem);
 }
 
 .employee_photo {
-    width: 9.8rem;
-    height: 9.8rem;
-    margin: 2rem 0;
+    position: absolute;
+    top: 8px;
+    right: -43px;
+    max-width: 154px;
 }
 

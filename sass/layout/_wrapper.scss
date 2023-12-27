@@ -1,4 +1,10 @@
 .wrapper {                     //единый стиль для обёрток всеч секций
   max-width: $content-width;
   margin: auto;
+  @include media-laptop {
+    padding: 0 4.6rem;
+  }
+  @include media-mobile {
+    padding: 0 2.1rem;
+  }
 }
