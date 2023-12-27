@@ -3,6 +3,13 @@
     background: url(../assets/images/tools/Bg.svg) no-repeat;
     background-size: 100%;
     background-position: center bottom;
+    @include media-tablet {
+        padding-top: 78px;
+    }
+    @include media-mobile {
+        width: 100%;
+        padding-top: 49px;
+    }
 }
 
 .tools__title {
@@ -11,26 +18,30 @@ margin: auto;
 text-align: center;
 @include media-tablet {
     width: 65%;
-    margin: 7.8% auto 0;
+    margin: auto;
 }
 @include media-mobile {
     width: 100%;
-    margin-top: 4.9rem;
 }
 }
 
 .colum-tools {
     padding: 5.8% 0 2.8%;
+    @include media-mobile {
+        padding: 43px 0 38px;
+        gap: 47px;
+    }
 }
 
 .tool {
     @include media-tablet {
         flex-basis: 45%;
-        margin-top: 5.4rem;
+        margin-top: 54px;
     }
     @include media-mobile {
         flex-basis: 100%;
-        margin-top: 4.7rem;
+        margin-top: 0;
+        padding: 0 25px;
     }
 }
 
@@ -58,14 +69,9 @@ text-align: center;
 }
 
 .tools__button {
-    width: 14.5%;
+    width: 171px;
     margin: 0 auto;
-    @include media-tablet {
-       width: 25.5%;
-       margin-top: 5.4rem;
-    }
     @include media-mobile {
-        width: 52%;
-        margin-top: 3.8rem;
+        width: 173px;
     }
 }
