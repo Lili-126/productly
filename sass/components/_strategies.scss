@@ -1,9 +1,15 @@
 .strategies {
     padding-top: 3rem;
+    @include media-tablet {
+        padding-top: 51px;
+    }
+    @include media-mobile {
+        padding-top: 63px;
+    }
 }
 
 .strategies__description {
-    padding-top: 1.4rem;
+    padding-top: 14px;
     @include media-tablet {
         text-align: center;
     }
@@ -20,18 +26,17 @@
 }
 
 .strategy-wrapper {
-    >* {   // св-во для всех прямых потомков блока
-        margin-bottom: 3rem;
-    }
+        row-gap: 30px;
     @include media-tablet {
     >* {
         flex-basis: 48%;
     }
     }
     @include media-mobile {
-        >* {
-            flex-basis: 100%;
-        }
+    row-gap: 21px;
+    >* {
+        flex-basis: 100%;
+    }
     }
 }
 
@@ -48,13 +53,32 @@
 
 .block-shadow__image {
     max-width: 100%;
+}
+
+.image_four,
+.image-table_block {
     @include media-tablet {
-       width: 32.3rem;
+        max-width: 100%;
+        height: 171px;
     }
 }
 
-.image-table {
+.image-table_block {
     display: none;
+    @include media-tablet {
+        display: block;
+    }
+}
+.image-table_none {
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.image-mobile_none {
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .block-shadow__container {

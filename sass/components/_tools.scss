@@ -5,6 +5,7 @@
     background-position: center bottom;
     @include media-tablet {
         padding-top: 78px;
+        padding-bottom: 47px;
     }
     @include media-mobile {
         width: 100%;
