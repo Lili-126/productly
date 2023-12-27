@@ -114,6 +114,11 @@ a {
 .logo {
   display: flex;
 }
+@media screen and (max-width: 431px) {
+  .logo {
+    padding-right: 108px;
+  }
+}
 
 @media screen and (max-width: 431px) {
   .logo-object {
@@ -255,6 +260,8 @@ a {
 }
 @media screen and (max-width: 431px) {
   .hamburger {
+    width: 27px;
+    height: 21px;
     margin-right: 6.1rem;
   }
 }
@@ -311,6 +318,11 @@ a {
 @media screen and (max-width: 768px) {
   .wrapper__header {
     padding-left: 2.4rem;
+  }
+}
+@media screen and (max-width: 431px) {
+  .wrapper__header {
+    padding-left: 2.1rem;
   }
 }
 
@@ -410,16 +422,18 @@ a {
 
 .promo__content {
   width: 47.8%;
-  padding-top: 9.5%;
+  padding-top: 10.5%;
 }
 @media screen and (max-width: 768px) {
   .promo__content {
     width: 60%;
+    padding-top: 6.8%;
   }
 }
 @media screen and (max-width: 431px) {
   .promo__content {
     width: 90%;
+    padding-top: 16px;
   }
 }
 
@@ -436,6 +450,7 @@ a {
 @media screen and (max-width: 768px) {
   .promo__text {
     width: 380px;
+    padding-top: 8%;
   }
 }
 @media screen and (max-width: 431px) {
@@ -446,6 +461,7 @@ a {
     font-weight: 400;
     line-height: 2.4rem;
     text-align: center;
+    padding-top: 9px;
   }
 }
 
@@ -455,10 +471,16 @@ a {
   gap: 4.4rem;
   padding-top: 7.5%;
 }
+@media screen and (max-width: 768px) {
+  .promo__buttons {
+    padding-top: 12%;
+  }
+}
 @media screen and (max-width: 431px) {
   .promo__buttons {
     flex-direction: column;
     gap: 2.5rem;
+    padding-top: 23px;
   }
 }
 
@@ -475,7 +497,7 @@ a {
 @media screen and (max-width: 431px) {
   .promo__image {
     display: block;
-    max-width: 90%;
+    max-width: 100%;
     padding-top: 1.2rem;
   }
 }

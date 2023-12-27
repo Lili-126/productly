@@ -1,5 +1,8 @@
 .logo {
     display: flex;
+    @include media-mobile {
+        padding-right: 108px;
+    }
 }
 
 .logo-object {

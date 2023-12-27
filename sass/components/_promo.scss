@@ -8,12 +8,14 @@
 
 .promo__content {
     width: 47.8%;
-    padding-top: 9.5%;
+    padding-top: 10.5%;
     @include media-tablet {
       width: 60%;
+      padding-top: 6.8%;
     }
     @include media-mobile {
         width: 90%;
+        padding-top: 16px;
     }
 }
 
@@ -26,11 +28,13 @@
     text-align: left;
     @include media-tablet {
         width: 380px;
+        padding-top: 8%;
     }
     @include media-mobile {
         width: auto;
         @include font(1.6rem, 400, 2.4rem);
         text-align: center;
+        padding-top: 9px;
     }
 }
 
@@ -39,9 +43,13 @@
     align-items: center;
     gap: 4.4rem;
     padding-top: 7.5%;
+    @include media-tablet {
+        padding-top: 12%;
+    }
     @include media-mobile {
         flex-direction: column;
         gap: 2.5rem;
+        padding-top: 23px;
     }
 }
 
@@ -54,7 +62,7 @@
     }
     @include media-mobile {
         display: block;
-        max-width: 90%;
+        max-width: 100%;
         padding-top: 1.2rem;
     }
 }
