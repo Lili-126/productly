@@ -2,14 +2,43 @@
     display: flex;
     justify-content: space-between;
     padding: 5.8rem 0 5.2rem;
+    @include media-tablet {
+        display: block;
+        padding: 47px 46px 28px;
+    }
+    @include media-mobile {
+        padding: 31px 21px 28px;
+    }
 }
 
 .wrapper-navigation {
     width: 70%;
+    @include media-tablet {
+        width: 100%;
+        padding-top: 34px;
+    }
+    @include media-mobile {
+        padding-top: 9px;
+    }
+}
+
+.footer-navigation {
+    @include media-mobile {
+        flex-basis: 60%;
+    }
+}
+
+.footer-navigation__heading {
+    @include media-mobile {
+        padding-top: 18px;
+    }
 }
 
 .footer-navigation__links {
-    margin-top: 1.5rem;
+    margin-top: 15px;
+    @include media-mobile {
+        margin-top: 5px;
+    }
 }
 
 .footer__link {
