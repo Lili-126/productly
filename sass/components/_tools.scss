@@ -4,8 +4,7 @@
     background-size: 100%;
     background-position: center bottom;
     @include media-tablet {
-        padding-top: 78px;
-        padding-bottom: 47px;
+        padding: 78px 46px 47px;
     }
     @include media-mobile {
         width: 100%;
@@ -72,7 +71,11 @@ text-align: center;
 .tools__button {
     width: 171px;
     margin: 0 auto;
+    @include media-tablet {
+        padding-top: 54px;
+    }
     @include media-mobile {
         width: 173px;
+        padding-top: 54px;
     }
 }

@@ -51,6 +51,12 @@ html {
   h4 {
     @include font(2.2rem, 600, 3rem);
     text-align: left;
+    @include media-tablet {
+      font-size: 2rem;
+    }
+    @include media-mobile {
+      font-size: 1.8rem;
+    }
   }
 
   h5 {
