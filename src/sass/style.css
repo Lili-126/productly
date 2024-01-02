@@ -199,7 +199,7 @@ a {
 }
 
 .ico_play {
-  background-image: url("../assets/images/promo/play.svg");
+  background-image: url("/src/assets/images/promo/play.svg");
   width: 18px;
   height: 19px;
   margin-right: 0.9rem;
@@ -212,11 +212,11 @@ a {
 }
 
 .ico_tel {
-  background-image: url("../assets/images/contacts_us/ico_phone.svg");
+  background-image: url("/src/assets/images/contacts_us/ico_phone.svg");
 }
 
 .ico_mail {
-  background-image: url("../assets/images/contacts_us/ico_mail.svg");
+  background-image: url("/src/assets/images/contacts_us/ico_mail.svg");
 }
 
 .tag {
@@ -554,7 +554,7 @@ a {
 
 .wrapper__tools {
   padding: 7.3% 0 5.95%;
-  background: url(../assets/images/tools/Bg.svg) no-repeat;
+  background: url(/assets/images/tools/Bg.svg) no-repeat;
   background-size: 100%;
   background-position: center bottom;
 }
