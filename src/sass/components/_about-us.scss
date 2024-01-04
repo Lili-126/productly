@@ -1,9 +1,20 @@
 .about-us {
     padding: 6.3% 0 6.7%;
+    @include media-tablet {
+        padding: 49px 0 50px;
+    }
 }
 
 .about-us__text {
     padding-top: 1.4rem;
+}
+
+.column-about {
+    @include media-tablet {
+        @include columns($width: 31.4%);
+        width: 1200px;
+        row-gap: 33px;
+    }
 }
 
 .employee {
