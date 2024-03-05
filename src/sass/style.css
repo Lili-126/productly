@@ -708,11 +708,19 @@ a {
 
 .block-shadow,
 .block-shadow_four {
-  display: flex;
-  flex-direction: column;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.0509803922);
   border-radius: 1rem;
 }
+
+.strategy {
+  display: flex;
+  flex-direction: column;
+}
+
+.strategy_hidden {
+  display: none;
+}
+
 .block-shadow__image {
   max-width: 100%;
 }
