@@ -1,5 +1,15 @@
+import { Article } from "./js/Article";
+import { data } from "./js/Strategies";
+
 // событие window  onload- это успешная загрузка
 window.onload = function() {
+    console.log('Hello Rolling School');
+
+    // Render Articles
+  if (data) {
+        renderArticlesToDom();
+    }
+
     // Tags
     addTagsClickHandler();
 };
@@ -41,7 +51,6 @@ const selectClickedTag = (clickedTag) => {
 
 const showAllStrategies = () => {
     let strategies = document.querySelectorAll('.strategy-wrapper .strategy');
-    console.log(strategies);
     strategies.forEach(strategy => {
      strategy.classList.remove('strategy_hidden');
     })
@@ -51,7 +60,6 @@ const showAllStrategies = () => {
 // показывает и скрывае картинки в зависимости от выбранного тега
 const filterStrategyBySelectedTag = (coloredTag) => {
    let strategies = document.querySelectorAll('.strategy-wrapper .strategy');
-   console.log(strategies);
    strategies.forEach(strategy => {
     strategy.classList.add('strategy_hidden');
     strategy.querySelectorAll('.tag').forEach( tag => {
@@ -61,4 +69,14 @@ const filterStrategyBySelectedTag = (coloredTag) => {
     })
    })
 };
+
+const renderArticlesToDom = () => {
+    let strategyWrapper = getStrategyWrapper();
+}
+
+const getStrategyWrapper = () => {
+    const strategiesWrapper = document.querySelector('.strategy-wrapper');
+    strategiesWrapper.innerHTML = '';
+    return strategiesWrapper;
+}
 
