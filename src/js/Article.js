@@ -7,14 +7,13 @@ export class Article {
     }
     // Article generator
     generatorArticle() {
-        const template ='';
+        let template = '';
         const article = document.createElement('article');
         article.className = 'strategy block-shadow';
-        article.setAttribute('data.id, this.id');
+        article.setAttribute('data-id', this.id);
 
-        if(this.urlToImage) {
-            template += `<img class="block-shadow__image" src=${this.urlToImage} alt="People">`
-        }
+        this.urlToImage &&
+        (template += `<img class="block-shadow__image" src=${this.urlToImage} alt="People">`);
 
         if(this.title || this.tags) {
             template += `<div class="block-shadow__container">`;

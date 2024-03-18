@@ -1,5 +1,5 @@
 import { Article } from "./js/Article";
-import { data } from "./js/Strategies";
+import { data } from "./js/Data";
 
 // событие window  onload- это успешная загрузка
 window.onload = function() {
@@ -72,11 +72,22 @@ const filterStrategyBySelectedTag = (coloredTag) => {
 
 const renderArticlesToDom = () => {
     let strategyWrapper = getStrategyWrapper();
+    generateArticles(data).forEach(article => {
+        strategyWrapper.append(article.generatorArticle())
+    });
 }
 
 const getStrategyWrapper = () => {
     const strategiesWrapper = document.querySelector('.strategy-wrapper');
     strategiesWrapper.innerHTML = '';
     return strategiesWrapper;
+}
+
+const generateArticles = (date) => {
+    const articles = [];
+    data.forEach(article => {
+        articles.push(new Article(article))
+    });
+    return articles;
 }
 
