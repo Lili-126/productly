@@ -1,20 +1,21 @@
 export class Article {
-    constructor({id, title, urlToImage, tags, ...rest}) {
+    constructor({id, name, title, urlToImage, tags, ...rest}) {
         this.id = id;
+        this.name = name;
         this.title = title;
         this.urlToImage = urlToImage;
         this.tags = tags;
     }
+
     // Article generator
     generatorArticle() {
-        const template ='';
+        let template = '';
         const article = document.createElement('article');
         article.className = 'strategy block-shadow';
-        article.setAttribute('data.id, this.id');
+        article.setAttribute('data-id', this.id);
 
-        if(this.urlToImage) {
-            template += `<img class="block-shadow__image" src=${this.urlToImage} alt="People">`
-        }
+        this.urlToImage &&
+        (template += `<img class="block-shadow__image ${this.name}" src=${this.urlToImage} alt="People">`);
 
         if(this.title || this.tags) {
             template += `<div class="block-shadow__container">`;
@@ -30,6 +31,7 @@ export class Article {
             }
             template += `</div>`;
         }
+
         article.innerHTML = template;
         return article;
     }
