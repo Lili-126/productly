@@ -86,8 +86,7 @@ const getStrategyWrapper = () => {
 const generateArticles = (date) => {
     const articles = [];
     data.forEach(article => {
-        articles.push(new Article(article))
+        articles.push(new Article(article));
     });
     return articles;
 }
-
