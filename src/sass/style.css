@@ -793,9 +793,21 @@ a {
     justify-content: space-between;
     width: 1200px;
     row-gap: 33px;
+    margin-left: -420px;
   }
   .column-about > * {
     flex-basis: 31.4%;
+  }
+}
+@media screen and (max-width: 431px) {
+  .column-about {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .column-about > * {
+    flex-basis: 28%;
   }
 }
 

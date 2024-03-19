@@ -14,6 +14,11 @@
         @include columns($width: 31.4%);
         width: 1200px;
         row-gap: 33px;
+        margin-left: -420px;
+    }
+    @include media-mobile {
+        margin-left: 0;
+        @include columns($width: 28%);
     }
 }
 
