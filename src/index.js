@@ -1,5 +1,6 @@
 import { Article } from "./js/Article";
 import { data } from "./js/Data";
+import { Modal } from "./js/Modal"
 
 // событие window  onload- это успешная загрузка
 window.onload = function() {
