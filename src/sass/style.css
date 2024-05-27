@@ -141,6 +141,9 @@ a {
   }
 }
 
+.logo-object {
+  width: 198px;
+}
 @media screen and (max-width: 431px) {
   .logo-object {
     width: 158px;
