@@ -821,7 +821,16 @@ a {
 }
 
 .block-shadow__tags {
+  cursor: pointer;
   padding-top: 2.4rem;
+}
+
+.article-modal {
+  width: 570px;
+}
+
+.article-modal__content img {
+  width: 100%;
 }
 
 .about-us {

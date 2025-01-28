@@ -1,6 +1,7 @@
 import { Article } from "./js/Article";
 import { data } from "./js/Data";
-import { Modal } from "./js/Modal"
+import { Modal } from "./js/Modal";
+import { ArticleModal } from "./js/ArticleModal";
 
 // событие window  onload- это успешная загрузка
 window.onload = function() {
@@ -13,6 +14,9 @@ window.onload = function() {
 
     // Tags
     addTagsClickHandler();
+
+    // generate base Modal from Modal Class
+    addToolsClickHandler();
 };
 
 //вешаем событие click на контейнер родителя tags
@@ -71,19 +75,25 @@ const filterStrategyBySelectedTag = (coloredTag) => {
    })
 };
 
+
+// помещаем все карточки articles в пустой контейнер
 const renderArticlesToDom = () => {
     let strategyWrapper = getStrategyWrapper();
     generateArticles(data).forEach(article => {
         strategyWrapper.append(article.generatorArticle())
     });
+
+    addStrategyClickHandler();
 }
 
+// получаем и отчищаем контейнер для articles элементов
 const getStrategyWrapper = () => {
     const strategiesWrapper = document.querySelector('.strategy-wrapper');
     strategiesWrapper.innerHTML = '';
     return strategiesWrapper;
 }
 
+//создаём карточки articles
 const generateArticles = (date) => {
     const articles = [];
     data.forEach(article => {
@@ -91,3 +101,41 @@ const generateArticles = (date) => {
     });
     return articles;
 }
+
+
+const addToolsClickHandler = () => {
+    document.querySelector('.tools__button .button').addEventListener('click', () => {
+        generateToolsModal();
+    })
+}
+
+const generateToolsModal = () => {
+    renderModalWindow('Hello');
+}
+
+//создание экземпляра модалки общий для всех модалок
+const renderModalWindow = (content) => {
+    const modal = new Modal('tools-modal');
+    modal.buildModal(content);
+}
+
+// получаем по клику модальное окно Артикла
+const addStrategyClickHandler = () => {
+    document.querySelector('.strategy-wrapper').addEventListener('click', (e) => {
+        if (e.target.closest('.strategy')) {
+            let clickedStrategyId = e.target.closest('.strategy').getAttribute('data-id');
+            let clickedStrategyIdDate = getClickedDate(clickedStrategyId);
+
+            renderArticleModalWindow(clickedStrategyIdDate);
+        }
+    });
+}
+
+const getClickedDate = (id) => {
+    return data.find( article => article.id == id);
+}
+
+const renderArticleModalWindow = (article) => {
+    let modal = new ArticleModal('article-modal', article);
+    modal.renderModal();
+};
