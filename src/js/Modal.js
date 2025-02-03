@@ -52,6 +52,7 @@ export class Modal {
         this.overlay.append(this.modal);
     }
 
+    //привязываем событие к кнопке и оверлею
     bindEvents() {
         this.modalCloseBtn.addEventListener('click', this.closeModal);
         this.overlay.addEventListener('click', this.closeModal);
