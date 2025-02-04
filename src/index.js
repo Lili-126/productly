@@ -120,12 +120,14 @@ const generateToolsModalSignIn = () => {
     let template = `<img class="modal__image" src="src/assets/images/strategies/img1.png" alt="Person">`;
         template += `<form class="modal__form">`;
         template += `<h2 class="modal__title">Sign In</h2>`;
-        template += `<input class="modal_email" name="email" type="email" autocomplete="email" placeholder="Email Address">`;
-        template += `<input class="modal__password" name="password" type="password" autocomplete="new-password" placeholder="Password">`;
+        template += `<input class="form_text" name="email" type="email" autocomplete="email" placeholder="Email Address">`;
+        template += `<input class="form_text" name="password" type="password" autocomplete="new-password" placeholder="Password">`;
         template += `<div class="modal-buttons">`;
-        template += `<input class="modal-buttons__checkbox" type="checkbox">`;
-        template += `<button class="modal-buttons__btn">Sign In</button>`;
-        template += `</div>`;
+        template += `<label class="label-checkbox">`;
+        template += `<input class="modal-buttons__checkbox" type="checkbox"> Remember me`;
+        template += `</label>`;
+        template += `<button class="button button_colored">Sign In</button>`;
+        template += `</д>`;
         template += `</form>`;
 
     renderModalWindow(template);
@@ -135,12 +137,12 @@ const generateToolsModalSignUp = () => {
     let template = `<img class="modal__image" src="src/assets/images/strategies/img2.png" alt="Person">`;
         template += `<form class="modal__form">`;
         template += `<h2 class="modal__title">Sign Up</h2>`;
-        template += `<input class="modal_email" name="email" type="email" autocomplete="email" placeholder="Email Address">`;
-        template += `<input class="modal_first-name" type="text" autocomplete="username" placeholder="First Name">`;
-        template += `<input class="modal_last-name" type="text" autocomplete="username" placeholder="Last Name">`;
-        template += `<input class="modal-password" name="password" type="password" autocomplete="new-password" placeholder="Password">`;
-        template += `<input class="modal-password" name="confirm-password" type="password" autocomplete="confirmPassword" placeholder="Confirm Password">`;
-        template += `<button class="modal-buttons__btn">Sign Up</button>`;
+        template += `<input class="form_text" name="email" type="email" autocomplete="email" placeholder="Email Address">`;
+        template += `<input class="form_text" type="text" autocomplete="username" placeholder="First Name">`;
+        template += `<input class="form_text" type="text" autocomplete="username" placeholder="Last Name">`;
+        template += `<input class="form_text" name="password" type="password" autocomplete="new-password" placeholder="Password">`;
+        template += `<input class="form_text" name="confirm-password" type="password" autocomplete="confirmPassword" placeholder="Confirm Password">`;
+        template += `<button class="button button_colored">Sign Up</button>`;
         template += `</form>`;
 
     renderModalWindow(template);

@@ -319,10 +319,8 @@ a {
   position: relative;
   border-radius: 10px;
   background-color: #ffffff;
-  width: 675px;
   min-height: 120px;
-  max-height: 90%;
-  overflow: auto;
+  padding-bottom: 15px;
 }
 @media screen and (max-width: 768px) {
   .modal {
@@ -338,6 +336,52 @@ a {
 }
 .modal__close-icon svg {
   pointer-events: none;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.modal__form .button_colored {
+  color: rgba(0, 0, 0, 0.748);
+  align-self: end;
+}
+
+.modal__title {
+  margin-bottom: 30px;
+}
+
+.form_text {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 12px;
+  border-color: transparent;
+  border: #FF9900 solid 2px;
+  border-radius: 3px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+
+input[type=checkbox] {
+  width: 25px;
+  height: 25px;
+  accent-color: #FF9900;
+  border-radius: 3px;
 }
 
 .wrapper {

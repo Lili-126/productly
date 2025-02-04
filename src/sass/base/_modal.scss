@@ -14,10 +14,8 @@
     position: relative;
     border-radius: 10px;
     background-color: $color-light;
-    width: 675px;
     min-height: 120px;
-    max-height: 90%;
-    overflow: auto;
+    padding-bottom: 15px;
     @extend %custom-scroll;
 
     @include media-tablet {
@@ -34,3 +32,53 @@
         pointer-events: none;
     }
 }
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    & .button_colored {
+        color: rgba(0, 0, 0, 0.748);
+        align-self: end;
+    }
+}
+
+.modal__title {
+    margin-bottom: 30px;
+}
+
+.form_text {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 12px;
+    border-color: transparent;
+    border: $color-primary solid 2px;
+    border-radius: 3px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-checkbox {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    accent-color: $color-primary;
+    border-radius: 3px;
+}
+
+
+
+
+
